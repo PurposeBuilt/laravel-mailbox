@@ -21,7 +21,11 @@ class Log implements DriverInterface
 
         /** @var InboundEmail $modelClass */
         $modelClass = config('mailbox.model');
-        $email = $modelClass::fromMessage($event->message);
+        //move the message to a streamable entity
+        $temp_message = fopen('php://temp', 'w+');
+        fwrite($temp_message, $event->message->toString());
+        fseek($temp_message, 0);
+        $email = $modelClass::fromMessage($temp_message);
 
         Mailbox::callMailboxes($email);
     }
