@@ -23,13 +23,13 @@
         "illuminate/routing": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
         "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
         "willdurand/email-reply-parser": "^2.8",
-        "zbateson/mail-mime-parser": "^1.1"
+        "zbateson/mail-mime-parser": "^1.1|^2.0|^3.0"
     },
     "require-dev": {
         "laminas/laminas-mail": "^2.13",
         "mockery/mockery": "^1.2",
-        "orchestra/testbench": "^4.0|^5.0|^7.0|^8.0",
-        "phpunit/phpunit": "^7.0|^8.0|^9.3"
+        "orchestra/testbench": "^4.0|^5.0|^7.0|^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^7.0|^8.0|^9.3|^10.0|^11.0"
     },
     "autoload": {
         "psr-4": {
